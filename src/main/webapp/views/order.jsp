@@ -28,7 +28,7 @@
 		Shopping</a>
 	<br />
 	<br />
-	<a href="${pageContext.request.contextPath }/">Home</a>
+	<a href="${pageContext.request.contextPath }/views/home.jsp">Home</a>
 	<br />
 </body>
 </html>

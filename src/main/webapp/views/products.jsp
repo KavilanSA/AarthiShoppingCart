@@ -24,7 +24,7 @@
 				<td>${product.name }</td>
 				<td>${product.price }</td>
 				<td>${product.quantity}</td>
-				<td><a href="${pageContext.request.contextPath}/cart?&action=add& product_id=${product.id }">AddToCart</a></td>
+				<td><a href="${pageContext.request.contextPath}/cart?&action=add&product_id=${product.id }">AddToCart</a></td>
 			</tr>
 		</c:forEach>
 	</table>
@@ -34,7 +34,7 @@
 <br/>	
 
 <br/>
- <a href="${pageContext.request.contextPath }/">Home</a>
+ <a href="${pageContext.request.contextPath }/views/home.jsp">Home</a>
 <br/>	
 	
 </body>

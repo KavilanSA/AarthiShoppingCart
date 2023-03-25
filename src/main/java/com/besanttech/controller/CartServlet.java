@@ -46,7 +46,7 @@ package com.besanttech.controller;
 				HttpSession session = request.getSession(false);
 				List<Product> cartProducts = (List<Product>) session.getAttribute("cartProducts");
 				for (Product product : cartProducts) {
-					if (product.getId() == Integer.parseInt(request.getParameter("product_id"))) {
+					if (product.getId() == Integer.parseInt(request.getParameter("id"))) {
 						cartProducts.remove(product);
 						session.setAttribute("cartProducts", cartProducts);
 						updateCartPrice(cartProducts,session);
